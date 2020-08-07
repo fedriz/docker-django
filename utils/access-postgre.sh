@@ -1,0 +1,1 @@
+docker-compose -f ../docker-compose.yml exec db psql --username=django --dbname=django_dev
