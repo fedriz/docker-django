@@ -1,1 +1,0 @@
-docker-compose exec web python project/manage.py migrate --noinput
