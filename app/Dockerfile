@@ -13,7 +13,10 @@ COPY ./requirements.txt .
 # install dependencies
 RUN apk update && \ 
   apk add --no-cache --virtual .build-deps \
+  gcc \
+  musl-dev \
   python3-dev \
+  postgresql-dev \
   libxml2 \
   libxml2-dev && \
   pip3 install --upgrade pip && \
@@ -22,3 +25,5 @@ RUN apk update && \
 
 # copy project
 COPY . .
+
+RUN apk --no-cache add libpq
