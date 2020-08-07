@@ -1,3 +1,4 @@
 app/env/
 app/project/db.sqlite3
 *.tar
+.vscode
