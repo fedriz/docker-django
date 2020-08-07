@@ -1,1 +1,1 @@
-docker-compose exec web python manage.py migrate --noinput
+docker-compose exec web python project/manage.py migrate --noinput
